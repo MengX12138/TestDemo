@@ -14,6 +14,9 @@ public class ProxyPersonBean {
                 new OwnerInvocationHandler(personBean));
     }
 
+    /**
+     * 代理类
+     */
     PersonBean getNonOwnerProxy(PersonBean personBean) {
         return (PersonBean) Proxy.newProxyInstance(
                 personBean.getClass().getClassLoader(),
