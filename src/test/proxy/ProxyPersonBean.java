@@ -4,7 +4,9 @@ import java.lang.reflect.Proxy;
 
 public class ProxyPersonBean {
 
-
+    /**
+     * 代理类
+     */
     PersonBean getOwnerProxy(PersonBean personBean) {
         return (PersonBean) Proxy.newProxyInstance(
                 personBean.getClass().getClassLoader(),
